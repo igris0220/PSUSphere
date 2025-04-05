@@ -180,7 +180,7 @@ class ProgramCreateView(CreateView):
     model = Program
     form_class = ProgramForm
     template_name = 'program_add.html'
-    success_url = reverse_lazy('program-list')
+    success_url = reverse_lazy('program_list')
 
     def form_valid(self, form):
         program_name = form.instance.prog_name
@@ -191,7 +191,7 @@ class ProgramUpdateView(UpdateView):
     model = Program
     fields = "__all__"
     template_name = 'program_edit.html'
-    success_url = reverse_lazy('program-list')
+    success_url = reverse_lazy('program_list')
 
     def form_valid(self, form):
         program_name = form.instance.prog_name
@@ -202,7 +202,7 @@ class ProgramDeleteView(DeleteView):
     model = Program
 #    form_class = ProgramForm
     template_name = 'program_del.html'
-    success_url = reverse_lazy('program-list')
+    success_url = reverse_lazy('program_list')
 
     def form_valid(self, form):
         messages.success(self.request, f"Program Deleted successfully.")
