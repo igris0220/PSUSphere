@@ -19,4 +19,113 @@
         </div>
     </div>
 </div>
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Dashboard</h4>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="card card-stats card-warning">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-users"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Students</p>
+													<h4 class="card-title">{{object_list.count}}</h4>
+                                                   
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats card-success">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-balance-scale"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Organizations</p>
+													<h4 class="card-title">{{ organization.count }}</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats card-danger">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-institution"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Colleges</p>
+													<h4 class="card-title">{{ total_college.count }}</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats card-primary">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-check-circle"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Programs</p>
+													<h4 class="card-title">576</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <div class="row">
+							<div class="col-md-4">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Users Statistics</h4>
+										<p class="card-category">
+										Users statistics this month</p>
+									</div>
+									<div class="card-body">
+										<div id="monthlyChart" class="chart chart-pie"><div class="chartist-tooltip"></div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-a"><path d="M103.664,150.484A72.742,72.742,0,0,0,103.664,5L103.664,77.742Z" class="ct-slice-pie" ct:value="50"></path></g><g class="ct-series ct-series-b"><path d="M34.482,100.221A72.742,72.742,0,0,0,103.918,150.484L103.664,77.742Z" class="ct-slice-pie" ct:value="20"></path></g><g class="ct-series ct-series-c"><path d="M103.664,5A72.742,72.742,0,0,0,34.561,100.462L103.664,77.742Z" class="ct-slice-pie" ct:value="30"></path></g><g><text dx="140.03515625" dy="77.7421875" text-anchor="middle" class="ct-label">50%</text><text dx="82.28566998400306" dy="107.16702044775444" text-anchor="middle" class="ct-label">20%</text><text dx="74.23922955224556" dy="56.363794984003064" text-anchor="middle" class="ct-label">30%</text></g></svg></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">2018 Sales</h4>
+										<p class="card-category">
+										Number of products sold</p>
+									</div>
+									<div class="card-body">
+										<div id="salesChart" class="chart"><div class="chartist-tooltip"></div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="245px" class="ct-chart-bar" style="width: 100%; height: 245px;"><g class="ct-grids"><line y1="210" y2="210" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="185.625" y2="185.625" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="161.25" y2="161.25" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="136.875" y2="136.875" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="112.5" y2="112.5" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="88.125" y2="88.125" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="63.75" y2="63.75" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="39.375" y2="39.375" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="461.65625" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><line x1="62.15234375" x2="62.15234375" y1="210" y2="112.5" class="ct-bar" ct:value="5"></line><line x1="96.45703125" x2="96.45703125" y1="210" y2="132" class="ct-bar" ct:value="4"></line><line x1="130.76171875" x2="130.76171875" y1="210" y2="151.5" class="ct-bar" ct:value="3"></line><line x1="165.06640625" x2="165.06640625" y1="210" y2="73.5" class="ct-bar" ct:value="7"></line><line x1="199.37109375" x2="199.37109375" y1="210" y2="112.5" class="ct-bar" ct:value="5"></line><line x1="233.67578125" x2="233.67578125" y1="210" y2="15" class="ct-bar" ct:value="10"></line><line x1="267.98046875" x2="267.98046875" y1="210" y2="151.5" class="ct-bar" ct:value="3"></line><line x1="302.28515625" x2="302.28515625" y1="210" y2="132" class="ct-bar" ct:value="4"></line><line x1="336.58984375" x2="336.58984375" y1="210" y2="54" class="ct-bar" ct:value="8"></line><line x1="370.89453125" x2="370.89453125" y1="210" y2="15" class="ct-bar" ct:value="10"></line><line x1="405.19921875" x2="405.19921875" y1="210" y2="93" class="ct-bar" ct:value="6"></line><line x1="439.50390625" x2="439.50390625" y1="210" y2="54" class="ct-bar" ct:value="8"></line></g><g class="ct-series ct-series-b"><line x1="72.15234375" x2="72.15234375" y1="210" y2="151.5" class="ct-bar" ct:value="3"></line><line x1="106.45703125" x2="106.45703125" y1="210" y2="171" class="ct-bar" ct:value="2"></line><line x1="140.76171875" x2="140.76171875" y1="210" y2="34.5" class="ct-bar" ct:value="9"></line><line x1="175.06640625" x2="175.06640625" y1="210" y2="112.5" class="ct-bar" ct:value="5"></line><line x1="209.37109375" x2="209.37109375" y1="210" y2="132" class="ct-bar" ct:value="4"></line><line x1="243.67578125" x2="243.67578125" y1="210" y2="93" class="ct-bar" ct:value="6"></line><line x1="277.98046875" x2="277.98046875" y1="210" y2="132" class="ct-bar" ct:value="4"></line><line x1="312.28515625" x2="312.28515625" y1="210" y2="93" class="ct-bar" ct:value="6"></line><line x1="346.58984375" x2="346.58984375" y1="210" y2="73.5" class="ct-bar" ct:value="7"></line><line x1="380.89453125" x2="380.89453125" y1="210" y2="54" class="ct-bar" ct:value="8"></line><line x1="415.19921875" x2="415.19921875" y1="210" y2="73.5" class="ct-bar" ct:value="7"></line><line x1="449.50390625" x2="449.50390625" y1="210" y2="132" class="ct-bar" ct:value="4"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Jan</span></foreignobject><foreignobject style="overflow: visible;" x="84.3046875" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Feb</span></foreignobject><foreignobject style="overflow: visible;" x="118.609375" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Mar</span></foreignobject><foreignobject style="overflow: visible;" x="152.9140625" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Apr</span></foreignobject><foreignobject style="overflow: visible;" x="187.21875" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">May</span></foreignobject><foreignobject style="overflow: visible;" x="221.5234375" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Jun</span></foreignobject><foreignobject style="overflow: visible;" x="255.828125" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Jul</span></foreignobject><foreignobject style="overflow: visible;" x="290.1328125" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Aug</span></foreignobject><foreignobject style="overflow: visible;" x="324.4375" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Sep</span></foreignobject><foreignobject style="overflow: visible;" x="358.7421875" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Oct</span></foreignobject><foreignobject style="overflow: visible;" x="393.046875" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Nov</span></foreignobject><foreignobject style="overflow: visible;" x="427.3515625" y="215" width="34.3046875" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 34px; height: 20px;">Dec</span></foreignobject><foreignobject style="overflow: visible;" y="185.625" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">0</span></foreignobject><foreignobject style="overflow: visible;" y="161.25" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">1.25</span></foreignobject><foreignobject style="overflow: visible;" y="136.875" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">2.5</span></foreignobject><foreignobject style="overflow: visible;" y="112.5" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">3.75</span></foreignobject><foreignobject style="overflow: visible;" y="88.125" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">5</span></foreignobject><foreignobject style="overflow: visible;" y="63.75" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">6.25</span></foreignobject><foreignobject style="overflow: visible;" y="39.375" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">7.5</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 24px; width: 30px;">8.75</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 30px; width: 30px;">10</span></foreignobject></g></svg></div>
+									</div>
+								</div>
+							</div>
+    </div>
+</div>
 {% endblock %}
